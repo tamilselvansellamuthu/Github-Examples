@@ -6,8 +6,7 @@ jobs:
     steps:
       - name: "Group message"
         run: |
-          echo |
-            "::group::This is a group message example."
+          echo "::group::This is a group message example."
             echo "This is a line inside the group."
             echo "Job context in JSON: ${{ toJSON(github.job) }}"
             echo "Job ref in JSON: ${{ toJSON(github.ref) }}"
