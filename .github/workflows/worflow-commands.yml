@@ -14,3 +14,7 @@ jobs:
           echo "Another line inside the group."
           echo "You can collapse and expand this section in the logs."
           echo "::endgroup::"
+      - name: "Set environment variable"
+        run: echo "NAME=GTS" >> $GITHUB_ENV
+      - name: "Display environment variable"
+        run: echo "The value of NAME is $NAME"
